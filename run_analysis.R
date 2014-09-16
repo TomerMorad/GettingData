@@ -1,84 +1,84 @@
 # read X
-train_x<-read.table("train/X_train.txt")
-test_x<-read.table("test/X_test.txt")
+train_x<-read.table("UCI HAR Dataset/train/X_train.txt")
+test_x<-read.table("UCI HAR Dataset/test/X_test.txt")
 # merge the training set and testing set
 merged_x<-rbind(train_x,test_x)
 
 # read y
-train_y<-read.table("train/y_train.txt")
-test_y<-read.table("test/y_test.txt")
+train_y<-read.table("UCI HAR Dataset/train/y_train.txt")
+test_y<-read.table("UCI HAR Dataset/test/y_test.txt")
 # merge the training set and testing set
 merged_y<-rbind(train_y,test_y)
 
 # read subject
-train_subject<-read.table("train/subject_train.txt")
-test_subject<-read.table("test/subject_test.txt")
+train_subject<-read.table("UCI HAR Dataset/train/subject_train.txt")
+test_subject<-read.table("UCI HAR Dataset/test/subject_test.txt")
 # merge the training set and testing set
 merged_subject<-rbind(train_subject,test_subject)
 
 # read body_acc_x
-train_body_acc_x<-read.table("train/Inertial Signals/body_acc_x_train.txt")
-test_body_acc_x<-read.table("test/Inertial Signals/body_acc_x_test.txt")
+train_body_acc_x<-read.table("UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt")
+test_body_acc_x<-read.table("UCI HAR Dataset/test/Inertial Signals/body_acc_x_test.txt")
 # merge the training set and testing set
 merged_body_acc_x<-rbind(train_body_acc_x,test_body_acc_x)
 
 # read body_acc_y
-train_body_acc_y<-read.table("train/Inertial Signals/body_acc_y_train.txt")
-test_body_acc_y<-read.table("test/Inertial Signals/body_acc_y_test.txt")
+train_body_acc_y<-read.table("UCI HAR Dataset/train/Inertial Signals/body_acc_y_train.txt")
+test_body_acc_y<-read.table("UCI HAR Dataset/test/Inertial Signals/body_acc_y_test.txt")
 # merge the training set and testing set
 merged_body_acc_y<-rbind(train_body_acc_y,test_body_acc_y)
 
 # read body_acc_z
-train_body_acc_z<-read.table("train/Inertial Signals/body_acc_z_train.txt")
-test_body_acc_z<-read.table("test/Inertial Signals/body_acc_z_test.txt")
+train_body_acc_z<-read.table("UCI HAR Dataset/train/Inertial Signals/body_acc_z_train.txt")
+test_body_acc_z<-read.table("UCI HAR Dataset/test/Inertial Signals/body_acc_z_test.txt")
 # merge the training set and testing set
 merged_body_acc_z<-rbind(train_body_acc_z,test_body_acc_z)
 
 # read body_gyro_x
-train_body_gyro_x<-read.table("train/Inertial Signals/body_gyro_x_train.txt")
-test_body_gyro_x<-read.table("test/Inertial Signals/body_gyro_x_test.txt")
+train_body_gyro_x<-read.table("UCI HAR Dataset/train/Inertial Signals/body_gyro_x_train.txt")
+test_body_gyro_x<-read.table("UCI HAR Dataset/test/Inertial Signals/body_gyro_x_test.txt")
 # merge the training set and testing set
 merged_body_gyro_x<-rbind(train_body_gyro_x,test_body_gyro_x)
 
 # read body_gyro_y
-train_body_gyro_y<-read.table("train/Inertial Signals/body_gyro_y_train.txt")
-test_body_gyro_y<-read.table("test/Inertial Signals/body_gyro_y_test.txt")
+train_body_gyro_y<-read.table("UCI HAR Dataset/train/Inertial Signals/body_gyro_y_train.txt")
+test_body_gyro_y<-read.table("UCI HAR Dataset/test/Inertial Signals/body_gyro_y_test.txt")
 # merge the training set and testing set
 merged_body_gyro_y<-rbind(train_body_gyro_y,test_body_gyro_y)
 
 # read body_gyro_z
-train_body_gyro_z<-read.table("train/Inertial Signals/body_gyro_z_train.txt")
-test_body_gyro_z<-read.table("test/Inertial Signals/body_gyro_z_test.txt")
+train_body_gyro_z<-read.table("UCI HAR Dataset/train/Inertial Signals/body_gyro_z_train.txt")
+test_body_gyro_z<-read.table("UCI HAR Dataset/test/Inertial Signals/body_gyro_z_test.txt")
 # merge the training set and testing set
 merged_body_gyro_z<-rbind(train_body_gyro_z,test_body_gyro_z)
 
 # read total_acc_x
-train_total_acc_x<-read.table("train/Inertial Signals/total_acc_x_train.txt")
-test_total_acc_x<-read.table("test/Inertial Signals/total_acc_x_test.txt")
+train_total_acc_x<-read.table("UCI HAR Dataset/train/Inertial Signals/total_acc_x_train.txt")
+test_total_acc_x<-read.table("UCI HAR Dataset/test/Inertial Signals/total_acc_x_test.txt")
 # merge the training set and testing set
 merged_total_acc_x<-rbind(train_total_acc_x,test_total_acc_x)
 
 # read total_acc_y
-train_total_acc_y<-read.table("train/Inertial Signals/total_acc_y_train.txt")
-test_total_acc_y<-read.table("test/Inertial Signals/total_acc_y_test.txt")
+train_total_acc_y<-read.table("UCI HAR Dataset/train/Inertial Signals/total_acc_y_train.txt")
+test_total_acc_y<-read.table("UCI HAR Dataset/test/Inertial Signals/total_acc_y_test.txt")
 # merge the training set and testing set
 merged_total_acc_y<-rbind(train_total_acc_y,test_total_acc_y)
 
 # read total_acc_z
-train_total_acc_z<-read.table("train/Inertial Signals/total_acc_z_train.txt")
-test_total_acc_z<-read.table("test/Inertial Signals/total_acc_z_test.txt")
+train_total_acc_z<-read.table("UCI HAR Dataset/train/Inertial Signals/total_acc_z_train.txt")
+test_total_acc_z<-read.table("UCI HAR Dataset/test/Inertial Signals/total_acc_z_test.txt")
 # merge the training set and testing set
 merged_total_acc_z<-rbind(train_total_acc_z,test_total_acc_z)
 
 # read features
-features<-read.table("features.txt")
+features<-read.table("UCI HAR Dataset/features.txt")
 names(merged_x)<-features$V2
 
 # choose only mean and standard deviation
 std_mean_x<-merged_x[,grep("-std()|-mean()",features$V2)]
 
 # read activity labels
-activity_labels<-read.table("activity_labels.txt")
+activity_labels<-read.table("UCI HAR Dataset/activity_labels.txt")
 
 # add an index to y
 merged_y$index <- 1:nrow(merged_y)
